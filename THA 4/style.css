@@ -1,40 +1,60 @@
+#container {
+   position: relative;
+   width: 100%;
+   padding-bottom: 100%;
+}
+
 #circle {
-  position: relative;
-  top: 100px;
-  margin: auto;
-  background: red;
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-}
-
-div {
-  border-radius: 50%;
-}
-
-.blue {
-  height: 400px;
-  width: 400px;
-  background-color: rgb(0, 36, 125);
-  position: relative;
-    border-radius: 50%;
-}
-
-.white {
-  height: 130px;
-  width: 130px;
-  background-color: #fff;
+  margin-left: 15%;
     position: absolute;
-  top: 35px;
-  left: 35px;
+    width: 75%;
+    height: 75%;
+    background-color: #f13123;
     border-radius: 50%;
 }
 
-.red {
-  height: 70px;
-  width: 70px;
-  background-color: rgb(206, 17, 38);
+#small-circle {
+    margin-top: 12%;
+    margin-left: 12%;
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+.minutes-container, .hours-container, .seconds-container {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hours {
+  background: #000;
+  height: 30%;
+  left: 48.75%;
+  position: absolute;
+  top: 20%;
+  width: 2.5%;
+}
+
+.minutes {
+  background: #000;
+  height: 40%;
+  left: 49%;
+  position: absolute;
+  top: 10%;
+  width: 2%;
+}
+
+.seconds {
+  background: #000;
+  height: 45%;
+  left: 49.5%;
+  position: absolute;
+  top: 14%;
+  transform-origin: 50% 80%;
+  width: 1%;
+  z-index: 8;
 }
