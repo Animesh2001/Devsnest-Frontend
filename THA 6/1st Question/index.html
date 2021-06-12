@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+   <p>Click here to check if its an array</p>
+   <button  onclick="Check()">Check</button>
+        <p id="demo"></p>
+<script type="text/javascript">
+
+
+  function Check(){
+  var fruit = [2,3,4,5,"Animesh"];
+  var x = document.getElementById("demo");
+  x.innerHTML= Array.isArray(fruit);
+}
+</script>
+
+  </body>
+</html>

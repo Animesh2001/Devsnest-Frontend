@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var array = [3,3,3,4,3,6,4,4,9];
+      function frequent(arr){
+        var m =0;
+        var p=1;
+        var n;
+        for(var i=0;i<arr.length;i++)
+        {
+          for(var j=i;j<arr.length;j++)
+          {
+            if(arr[i]==arr[j]){
+              m++;
+          }
+        }
+        if(p<m){
+          p=m;
+          n=arr[i];
+        }
+              m=0;
+        }
+      console.log(n+" ( " + p +" times ) ") ;
+
+      }
+      frequent(array);
+
+    </script>
+  </body>
+</html>
