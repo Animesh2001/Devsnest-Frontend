@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    const cylinder = {
+      pi: Math.PI,
+      radius: 10,
+      height: 10,
+      volume: function(){
+          return (this.pi * Math.pow(this.radius, 2) * this.height);
+      }
+  }
+
+  var vol = parseFloat( cylinder.volume().toFixed(4) );
+
+  console.log(vol);
+
+
+    </script>
+  </body>
+</html>

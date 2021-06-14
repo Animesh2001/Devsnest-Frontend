@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var library = [
+   {
+       title: 'The Road Ahead',
+       author: 'Bill Gates',
+       libraryID: 1254
+   },
+   {
+       title: 'Walter Isaacson',
+       author: 'Steve Jobs',
+       libraryID: 4264
+   },
+   {
+       title: 'Mockingjay: The Final Book of The Hunger Games',
+       author: 'Suzanne Collins',
+       libraryID: 3245
+   }
+];
+
+var sortable = [];
+for(var id in library){
+   sortable.push(library[id]['libraryID']);
+}
+
+sortable.sort((a,b) => a-b);
+
+for (const j in library) {
+   for (var k in library) {
+       if (sortable[j] == (library[k].libraryID)) {
+           console.log(library[k]);
+       }
+   }
+}
+
+
+
+    </script>
+  </body>
+</html>
