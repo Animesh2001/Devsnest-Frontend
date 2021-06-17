@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css/master.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+//Create 2 object and try to use call, apply and bind on them.
+const server1 = { serverName:"Devsnest" , getInvite: function() {
+  console.log("discord.net//" + this.serverName);}
+}
+
+const server2 = { serverName:"The Developer Community"  }
+//CALL
+server1.getInvite.call(server2);
+
+//APPLY
+const server3 = { serverName:"Devsnest" , getInvite: function(a,b) {
+  console.log("discord.net//" + this.serverName);
+console.log(a+b);}
+}
+
+const server4 = { serverName:"The Developer Community"  }
+
+server3.getInvite.apply(server4,[1,2])
+
+//BIND
+const ab = server1.getInvite.bind(server2,1,2)
+ab();
+
+
+  </script>
+
+  </body>
+</html>
